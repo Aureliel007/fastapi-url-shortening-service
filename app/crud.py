@@ -24,7 +24,6 @@ async def get_target_url(session: Session, short_url: str) -> Urls:
         select(Urls).where(Urls.short_url == short_url)
     )
     orm_obj = result.scalars().first()
-    print(orm_obj)
     if orm_obj is None:
         raise HTTPException(status_code=404, detail="URL not found")
     return orm_obj
