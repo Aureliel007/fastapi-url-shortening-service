@@ -39,7 +39,7 @@ docker-compose up
 ## API Documentation
 
 Once the service is running, interactive API documentation is available 
-at Swagger UI: http://<your-address>:8080/docs
+at Swagger UI: http://{your-address}:8080/docs
 
 ### Main Endpoints
 
